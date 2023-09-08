@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [sampleSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="sampleTest(failed)">
+    <classes>
+      <class name="testNGPackage.testNGClass_Two">
+        <methods>
+          <include name="cucumberSearchTest"/>
+        </methods>
+      </class> <!-- testNGPackage.testNGClass_Two -->
+    </classes>
+  </test> <!-- sampleTest(failed) -->
+</suite> <!-- Failed suite [sampleSuite] -->

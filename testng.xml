@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sampleSuite" thread-count="2" parallel="tests">
+	<parameter name="browser" value="chrome">
+	<test name="LoginPageTest">
+		<classes>
+			<class name="parallelScripts.LoginPageTest" />
+		</classes>
+	</test>
+	</parameter>
+</suite>
+
+<!-- Concept: classes run, Groups etc., -->
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sampleSuite">
+	<test thread-count="5" name="sampleTest">
+		<groups>
+			<define name="SmokeTest">
+				<include name="featureOne" />
+				<include name="featureFour" />
+			</define>
+			<define name="RegTest">
+				<include name="featureThree" />
+				<include name="featureTwo" />
+			</define>
+			<run>
+				<include name="Smoketest" />
+				<include name="featureOne" />
+				<exclude name="featureTwo" />
+			</run>
+		</groups>
+		<classes>
+			<class name="testNGPackage.testNGClass_Three" />
+			<class name="testNGPackage.testNGClass_Four" />
+		</classes>
+	</test> 
+</suite> -->
+
+<!-- Concept: Parallel methods execution -->
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sampleSuite" thread-count="2" parallel="methods">
+	<test name="sampleOneTest">
+		<classes>
+			<class name="parallelScripts.sampleOneTest" />
+		</classes>
+	</test> 
+</suite> -->
+
+<!-- Concept: Parallel classes execution -->
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sampleSuite" thread-count="2" parallel="classes">
+	<test name="sampleOneTest">
+		<classes>
+			<class name="parallelScripts.sampleOneTest" />
+			<class name="parallelScripts.sampleTwoTest" />
+		</classes>
+	</test> 
+</suite> -->
+
+<!-- Concept: Parallel tests execution -->
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="sampleSuite" thread-count="2" parallel="tests">
+	<test name="sampleOneTest">
+		<classes>
+			<class name="parallelScripts.sampleOneTest" />
+			<class name="parallelScripts.sampleTwoTest" />
+		</classes>
+	</test>
+	<test name="sampleTwoTest">
+		<classes>
+			<class name="parallelScripts.sampleThreeTest" />
+		</classes>
+	</test>
+</suite> -->
