@@ -4,7 +4,7 @@
 	<parameter name="browser" value="chrome">
 	<test name="LoginPageTest">
 		<classes>
-			<class name="parallelScripts.LoginPageTest" />
+			<class name="simpleProject/src/test/java/testNGPackage/assertHard_Soft.java" />
 		</classes>
 	</test>
 	</parameter>
