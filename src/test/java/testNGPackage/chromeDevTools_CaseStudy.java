@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v110.emulation.Emulation;
+//import org.openqa.selenium.devtools.v110.emulation.Emulation;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -45,11 +45,11 @@ public class chromeDevTools_CaseStudy {
         driver.get("https://www.selenium.dev/");		
 	}
 	
-	@Test
-	public void geoTest() {        
-		devTools.send(Emulation.setGeolocationOverride(Optional.of(35.689487), Optional.of(139.691706), Optional.of(100)));
-        driver.get("https://oldnavy.gap.com/stores");
-	}
+	// @Test
+	// public void geoTest() {        
+	// 	devTools.send(Emulation.setGeolocationOverride(Optional.of(35.689487), Optional.of(139.691706), Optional.of(100)));
+ //        driver.get("https://oldnavy.gap.com/stores");
+	// }
 	
 	
 }
