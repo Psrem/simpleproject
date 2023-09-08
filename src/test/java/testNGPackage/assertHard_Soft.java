@@ -16,7 +16,7 @@ public class assertHard_Soft {
 	public void softAssertCucumberSearchTest() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.google.com/");
+		driver.get("https://the-internet.herokuapp.com/login");
 		
 		SoftAssert softAss = new SoftAssert();
 		softAss.assertEquals(driver.getTitle(), "Java Tutorial - Google Page");
@@ -32,7 +32,7 @@ public class assertHard_Soft {
 	public void hardAssertCucumberSearchTest() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.google.com/");
+		driver.get("https://the-internet.herokuapp.com/login");
 		Assert.assertEquals(driver.getTitle(), "Java Tutorial - Google Page");
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Java Tutorial");
